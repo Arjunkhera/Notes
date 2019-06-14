@@ -1,0 +1,26 @@
+total 96
+drwxrwxr-x 2 arjun arjun 4096 Sep  3 12:22 .
+drwxrwxr-x 8 arjun arjun 4096 Aug 26 09:15 ..
+-rw-rw-r-- 1 arjun arjun  115 Aug 23 21:34 arrayfirst.sh
+-rw-rw-r-- 1 arjun arjun  115 Aug 23 21:36 arraysecond.sh
+-rw-rw-r-- 1 arjun arjun   85 Aug 25 13:05 braces.sh
+-rw-rw-r-- 1 arjun arjun  413 Aug 26 18:45 callingsource.sh
+-rw-rw-r-- 1 arjun arjun  762 Sep  1 13:44 commitslog.txt
+-rw-rw-r-- 1 arjun arjun  207 Aug 26 20:28 extremes.sh
+-rw-rw-r-- 1 arjun arjun    0 Sep  3 12:22 files.txt
+-rw-rw-r-- 1 arjun arjun  277 Aug 26 18:53 functionfifth.sh
+-rw-rw-r-- 1 arjun arjun  157 Aug 26 10:33 functionfirst.sh
+-rw-rw-r-- 1 arjun arjun  212 Aug 26 18:24 functionfourth.sh
+-rw-rw-r-- 1 arjun arjun  127 Aug 26 18:08 functionsecond.sh
+-rw-rw-r-- 1 arjun arjun  213 Aug 26 18:13 functionthird.sh
+-rw-rw-r-- 1 arjun arjun  391 Sep  1 13:44 gitlog.sh
+-rw-rw-r-- 1 arjun arjun  190 Aug 23 16:51 input.sh
+-rw-rw-r-- 1 arjun arjun  123 Aug 23 20:40 logicalfirst.sh
+-rw-rw-r-- 1 arjun arjun  109 Aug 23 21:12 logicalfourth.sh
+-rw-rw-r-- 1 arjun arjun  118 Aug 25 12:52 logicalsecond.sh
+-rw-rw-r-- 1 arjun arjun  183 Aug 23 21:04 logicalthird.sh
+-rw-rw-r-- 1 arjun arjun  135 Aug 26 09:14 loopprac.sh
+-rw-rw-r-- 1 arjun arjun  110 Aug 26 20:24 range.sh
+-rwxrw-r-- 1 arjun arjun   96 Aug 20 19:42 varfirst.sh
+-rw-rw-r-- 1 arjun arjun  144 Aug 20 19:49 varsecond.sh
+-rw-rw-r-- 1 arjun arjun   95 Aug 20 19:56 varthird.sh
