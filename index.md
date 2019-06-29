@@ -36,6 +36,7 @@ setup in the blog.
 - [HTML/CSS](programming/html_css/main.md)
 - [Javascript](programming/javascript/main.md)
 - [Golang](programming/golang/main.md)
+- [Java](programming/java/main.md)
 - [MongoDB](programming/mongoDB/main.md)
  
 ### Tools
