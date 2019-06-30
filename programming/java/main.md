@@ -19,4 +19,5 @@
 3. [Basics Input Output](inputOutput.md)
 4. [Understanding Static](static.md)
 5. [Class Whiplash : quicktake](classQuickTake.md)
-6. [Reference Programs](referencePrograms/main.md)
+6. [Understanding == and equals](equals.md)
+7. [Reference Programs](referencePrograms/main.md)
