@@ -25,7 +25,7 @@
 4. Regex
 5. timer (setTimeout, clearTimeout, setInterval, clearInterval)
 
-
+###Objects
 ```javascript
 // objects
 var obj = {
@@ -157,6 +157,7 @@ greet.call(emp, 'Mr', 'Have a nice day');
 greet.apply(emp, ['Mr', 'Have a nice day'];
 ```
 
+#### Methods of invoking functions
 1. There are six ways of calling/invoking a function
 2. The difference is : *what is the this context*
 3. In some cases the this context is fixed and in some cases the context is variable
@@ -221,6 +222,7 @@ console.log(i); // correct
 The following section covers some new mechanisms introduced in ES6
 
 1. Array Destructuring
+
 ```javascript
 var numbers = [1,2,3]
 

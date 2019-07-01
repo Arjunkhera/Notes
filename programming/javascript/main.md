@@ -1,7 +1,7 @@
 # Javascript
 
-[Getting Started](gettingStarted.md)
-[Quick Outtake](outtake.md)
+1. [Getting Started](gettingStarted.md)
+2. [Quick Outtake](outtake.md)
 
 ## Semantics
 
