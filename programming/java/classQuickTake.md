@@ -62,9 +62,9 @@ p.simpleTask(); // ERROR
 1. Upcasting : Assigning an object of child class to that of a super class
     - We can override the functions of the super class
     - We can also use the super class constructor to make our life easier in child classes
-    - **Dynamic binding**/**Runtime Polymorphism** allows us to upcast and call overloaded methods 
+    - **Dynamic binding**/**Runtime Polymorphism** allows us to upcast and call overridden methods 
 
-3. Downcasting : Assigning an object of super class to that of the child class
+2. Downcasting : Assigning an object of super class to that of the child class
     - The super class object cannot access the methods or variables of the child class
     - It can only call the ones that are inherited by the child from it
 

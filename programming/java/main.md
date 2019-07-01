@@ -20,4 +20,5 @@
 4. [Understanding Static](static.md)
 5. [Class Whiplash : quicktake](classQuickTake.md)
 6. [Understanding == and equals](equals.md)
-7. [Reference Programs](referencePrograms/main.md)
+7. [Static and Dynamic Binding](staticAndDynamicBinding.md)
+8. [Reference Programs](referencePrograms/main.md)

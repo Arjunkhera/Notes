@@ -1,5 +1,8 @@
 # Javascript
 
+[Getting Started](gettingStarted.md)
+[Quick Outtake](outtake.md)
+
 ## Semantics
 
 1. [Basic Advice](advice.md)
