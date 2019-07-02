@@ -1,0 +1,59 @@
+## Custom Greeting
+
+```javascript
+
+CTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Greeter</title>
+	<script src="react.development.js"></script>
+	<script src="react-dom.development.js"></script>
+	<script src="babel.min.js"></script>
+	<style>
+		.highlight{
+			color : blue;
+			font-size : 18pt;
+		}
+	</style>
+	<script type="text/babel">
+		class Greeter extends React.Component{
+
+			state = { message : '', userName : ''};
+
+			onGreetClick = () => {
+				let greetMessage = `Hi ${this.state.userName}, ${this.props.msg}`;
+				this.setState({message : greetMessage});
+			}
+
+			render = () => {
+				return(
+					<div>
+						<h1>Greeter</h1>
+						<hr/>
+						<label htmlFor="">User Name :</label>
+						<input type="text" onChange={ evt => this.setState({userName : evt.target.value})}/>
+						<input type="button" value="Greet" onClick={this.onGreetClick}/>
+						<div className="highlight">{this.state.message}</div>
+					</div>
+				)
+			}
+		}
+
+		ReactDOM.render(
+			<div>
+				<Greeter msg="Have a nice day!" xyz="100" abc="200"/>
+				<hr/>
+				<Greeter msg="Have a good day!"/>
+			</div>,
+			document.getElementById('root'));
+	</script>
+</head>
+<body>
+	<div id="root">
+		
+	</div>
+</body>
+</html>
+
+```

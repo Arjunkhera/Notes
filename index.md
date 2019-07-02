@@ -45,6 +45,7 @@ setup in the blog.
 - [Vim](tools/vim/main.md)
 - [VimWiki](tools/vimWiki/main.md)
 - [Git](tools/git/main.md)
+- [React](tools/react/main.md)
 
 ### Miscellaneous
 
