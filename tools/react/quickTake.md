@@ -200,7 +200,6 @@ To use variables inside xml in babel, use ```{variableName}```
 2. filter
 3. map
 4. reduce
-Instead of class use ClassName
 
 
 
