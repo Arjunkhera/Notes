@@ -106,7 +106,7 @@ function onDocumentLoad() {
 // single line execution
 // cannot add straightaway in script as will be executed before document is loaded
 // we need it to be executed after document is executed
-// so we the following
+// so we add the following line
 window.addEventListener('load', onDocumentLoad);
 ```
 

@@ -91,7 +91,7 @@ fn.whoAmI();
 
 ```
 
-1. In javascript it does not matter where the functions
+1. In javascript it does not matter where the functions are declared
 2. But where the function is invoked
 3. In the following example the function is invoked as a method of the object 
 4. Hence the reason why this refers to emp. 
@@ -154,7 +154,7 @@ emp.greet('Mr', 'Have a nice day');
 greet.call(emp, 'Mr', 'Have a nice day');
 
 // using apply
-greet.apply(emp, ['Mr', 'Have a nice day'];
+greet.apply(emp, ['Mr', 'Have a nice day']);
 ```
 
 #### Methods of invoking functions
@@ -191,7 +191,7 @@ fn.apply();
 })()
 ```
 1. If you want to hide any variable or functionality, then use functions
-2. A variable inside the function is garabge collected after the function is invoked
+2. A variable inside the function is garbage collected after the function is invoked
 3. Closures are way of extending the life of variable outside the function life
 
 **How does a closure work**
@@ -208,7 +208,7 @@ The following were introduced
 2. const
 
 **Why**
-1. variables declared using var is not block scoped
+1. variables declared using var are not block scoped
 2. Check this out : *variable hoisting*
 
 ```javascript
@@ -301,7 +301,7 @@ var add = (x,y) => {
 var add = (x,y) => x+y;
 ```
 
-6. String templatin
+6. String templating
 
 ```javascript
 // String templating 
@@ -353,7 +353,7 @@ class FulltimeEmployee extends Employee{
 
 ---
 
-[For](For) more ES6 features [check this out](http://es6-features.org)
+For more ES6 features [check this out](http://es6-features.org)
 
 
 

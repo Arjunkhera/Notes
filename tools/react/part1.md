@@ -1,5 +1,6 @@
-## React 
-Library used to build rich internet applications
+## Lets React : Part 1
+
+**React** is a library used to build rich internet applications
 
 ---
 
