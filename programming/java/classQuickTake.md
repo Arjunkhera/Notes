@@ -92,4 +92,7 @@ p.simpleTask(); // ERROR
 5. Classes which do not exist in the real world, mark them abstract
 6. Use abstract functions to ensure uniformity and force inherited classes to declare their own function body rather than rely on the parent
 7. Abstract class need not have absract method, but if a class has a abstract method, then the class automatically becomes abstract.
+8. You can create an object of the class within the class definition and it works just fine. Check [this out](https://stackoverflow.com/questions/9780742/how-can-a-class-have-a-member-of-its-own-type-isnt-this-infinite-recursion) for more details.
+
+
 

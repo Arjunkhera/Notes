@@ -15,7 +15,7 @@ If you only want to run a Java program, JRE is enough for you.
 ### Java Development Kit(JDK)
 JDK is a package to run and develop Java programs. It includes JRE and tools for developers, such as Java compiler, debugger, archiver, etc.
 
-Java compiler (usually it's the javac﻿ tool) translates *.java into *.class. Several files with *.class extension can be packed together in a single Java Archive (JAR-file).
+Java compiler (usually it's the javac tool) translates *.java into *.class. Several files with *.class extension can be packed together in a single Java Archive (JAR-file).
 
 As a developer, you need to install JDK to develop your programs.
 

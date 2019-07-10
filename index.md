@@ -46,6 +46,7 @@ setup in the blog.
 - [VimWiki](tools/vimWiki/main.md)
 - [Git](tools/git/main.md)
 - [React](tools/react/main.md)
+- [JSP and Servlets](tools/jspServlets/main.md)
 
 ### Miscellaneous
 

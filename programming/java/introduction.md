@@ -12,10 +12,9 @@ Another important feature is a simple and clear syntax. Many elements of the lan
 
 If you have ever written programs in C/C++, then you know that manual memory cleaning can lead to bugs in the code. Fortunately, Java has a garbage collector that automatically cleans memory from unused objects during runtime.
 
-It is also important that Java supports multiple programming paradigms that you will learn during this course. Java is primarily an imperative language based on the object-oriented concept: almost every part of a program is an object. Therefore, a program itself can be considered a set of interacting objects. Also, it partially supports modern programming paradigms such as generic programming, concurrent programming, functional programming (starting with Java 8), and some others.
+It is also important that Java supports multiple programming paradigms. Java is primarily an imperative language based on the object-oriented concept: almost every part of a program is an object. Therefore, a program itself can be considered a set of interacting objects. Also, it partially supports modern programming paradigms such as generic programming, concurrent programming, functional programming (starting with Java 8), and some others.
 
 In conclusion, Java is a modern and popular programming language that can be successfully used in almost all domains.
-
 
 ### Terminology
 

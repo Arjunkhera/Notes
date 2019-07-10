@@ -18,3 +18,27 @@ class Program {
          * }
 
 ```
+
+3. Each primitive class has a wrapper class defined for it. Boxing is the conversion between the primitive types and their corresponding object classes. Unboxing is the reverse process.
+
+```java
+int primitive = 100;
+
+Integer reference = Integer.valueOf(primitive); // boxing
+
+int anotherPrimitive = reference.intValue();    // unboxing
+```
+Use of constructors for making objects of primitive types from strings have now been deprecated since Java 9. Use special methods only to create the objects of the wrapper class.
+
+**Primitive types cannot be used in Collections but wrappers can**
+
+```java
+
+// normal constructor methods, deperacated from version 9
+Long firstMethod = new Long("200");
+
+// special methods 
+Long secondMethod = Long.parseLong("200");
+Long thirdMethod = Long.valueOf("200");
+
+```
