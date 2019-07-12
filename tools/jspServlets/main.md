@@ -6,15 +6,28 @@
 4. [Cookies](cookies.md)
 5. [JSP tags](jspTags.md)
 
- 
+---
+
+## Servlets
+
+1. [Introduction](introduction.md)
+2. [Configuration Parameters](configurationParameters.md)
 
 
-6. Best practice is to integrate both JSP and Servlets together to achieve out target
-7. Servlet handles the business logic
-8. JSP handles the presentation view
-9. This is in line with the Model View Controller Pattern(MVC)
+---
+
+### General Advice
+
+1. Best practice is to integrate both JSP and Servlets together to achieve out target
+2. Servlet handles the business logic
+3. JSP handles the presentation view
+4. This is in line with the Model View Controller Pattern(MVC)
 
 
-We can write configuration parameters in a configuration file
-We can provide context parameters in the xml file 
 
+ Web Browser -----> Controller(Servlet) -----> Model
+							|
+							|
+							|
+							|
+ Web Browser <------	 View(JSP)
