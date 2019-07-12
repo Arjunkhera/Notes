@@ -2,17 +2,16 @@
 
 ### Three types of scripting elements in JSP
 
-1. JSP expression : ``` <%= some Java expression %? ```
+1. JSP expression : ``` <%= some Java expression %> ```
 2. JSP scriptlet : ``` <% some java code : 1 to many lines %> ```
 3. JSP declaration : ``` <%! variable or method declaration %> ```
-
 
 ---
 
 ### Importing Packages in JSP
 
 ```
-<%@ page import="" %>
+<%@ page import="com.adobe.prj.entity.*" %>
 ```
 
 ---
