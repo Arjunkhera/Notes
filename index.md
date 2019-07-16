@@ -38,6 +38,7 @@ setup in the blog.
 - [Golang](programming/golang/main.md)
 - [Java](programming/java/main.md)
 - [MongoDB](programming/mongoDB/main.md)
+- [C++](programming/c++/main.md)
  
 ### Tools
 
@@ -47,6 +48,7 @@ setup in the blog.
 - [Git](tools/git/main.md)
 - [React](tools/react/main.md)
 - [JSP and Servlets](tools/jspServlets/main.md)
+- [Spring](tools/Spring/main.md)
 
 ### Miscellaneous
 
@@ -61,3 +63,9 @@ setup in the blog.
 - [ ] Modify the golang code for conversion of md to html
 - [ ] Beautify the converted html files, try to add template for reusabiltiy
 - [ ] Buy a domain name to host the website
+
+---
+
+### Temporary
+
+1. [Mini Project API's](apis.md)
