@@ -2,7 +2,6 @@
 
 Inside Object Model**
 
-
 ### Naming Conventions
 
 We take care of **name mangling**
