@@ -252,6 +252,11 @@ presents an approach to solve this problem,
 5. One can also pass the smart pointer from the wrapper object in order to make direct function calls on the parent class 
 6. To ensure that the wrapper class is restricted from the heap, overload the new and delete operators and make them private
 
+This wrapper class thus uses the smart pointer to manage heap memory. Now we are faced with a couple of new situations
+
+What if we have a couple of wrappers pointing to the same objects, how to ensure that the memory deallocation does not
+lead to dangling pointers. 
+How do we make multiple wrappers point to the same object 
 ---
 
 ### Deep Copy

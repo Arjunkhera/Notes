@@ -6,3 +6,5 @@
 
 [Try, Catch and Exceptions](tryCatchExceptions.md)
 [Wrapper classes + other imp stuff](wrapper.md)
+[Principles](principles.md)
+[More on Classes](moreOnClasses.md)
