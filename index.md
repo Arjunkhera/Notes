@@ -49,6 +49,7 @@ setup in the blog.
 - [React](tools/react/main.md)
 - [JSP and Servlets](tools/jspServlets/main.md)
 - [Spring](tools/Spring/main.md)
+- [Content Repositories](tools/ContentRepository/main.md)
 
 ### Miscellaneous
 

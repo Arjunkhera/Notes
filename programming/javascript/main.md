@@ -18,6 +18,7 @@
 ## Miscellaneous
 
 [Some sample codes](sample.md)
+
 ---
 
 **Note**

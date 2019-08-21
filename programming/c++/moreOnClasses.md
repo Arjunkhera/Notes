@@ -714,5 +714,49 @@ int main(){
 8. Perfect forward
 9. Init
 
+### Vertical Access Control 
+
+1. Using friend class
+
+```c++
+
+
+```
+
+
+2. We can specifically make something private or protected through the ```using``` keyword
+
+
+```c++
+
+```
+
+
+### Function Overloading
+
+1. Overloaded functions are hidden in derived classes
+2. This can lead to problems if we try to overload them in the derived class
+3. To solve this, we expose them again through the ```using``` keyword 
+
+
+### Returning from functions
+
+1. Tuple 
+   
+### Alias
+
+###
+
+How to give reference choices in val
+
+
+### Promises
+
+1. Promise is an object used for callbacks in asynchronous programming
+2. Used for subscribing success and failure methods as call backs
+3. Are objects returned from a function for subscription
+
+
+**call_once**
 
 
