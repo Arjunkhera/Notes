@@ -15,12 +15,14 @@
 
 [Basic Programs](basicPrograms.md)
 
-I once did the Unix WorkBench Course from Cousera. It is really great for
-beginners, I higly recommend doing it if you are just starting out. Just in
-case somebody needs the solutions, all of them are available here 
-: [solutions]()
+I once did the Unix WorkBench Course from Cousera. It is really great for beginners, I highly recommend doing it if you are just starting out. 
+Just in case somebody needs the solutions, all of them are available here : [solutions]()
 
 ## Miscellaneous
+
+### Tete with Grep
+
+1. Searching for text in files. Check [this](https://askubuntu.com/questions/55325/how-to-use-grep-command-to-find-text-including-subdirectories) out.
 
 ### Understanding Shell expansion
 
@@ -75,7 +77,6 @@ do
   mv $line /path/to/the/directory
 done > filename.txt
 ```
-
 ---
 
 # Ubuntu 

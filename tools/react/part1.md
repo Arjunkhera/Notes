@@ -2,19 +2,17 @@
 
 **React** is a library used to build rich internet applications
 
----
-
 ### Order of access from bottom to top
-1. Data Store : Persistent data storage
-2. Respository : Data Access Layer
-3. Domain : Business Layer
-4. App Services
-5. UI layer : user interaction
-6. Cross Cutting Concerns: services which are needed through all other layers. For example, authentication and authorisation
+1. *Data Store* : Persistent data storage
+2. *Respository* : Data Access Layer
+3. *Domain* : Business Layer
+4. *App Services*
+5. *UI layer* : user interaction
+6. *Cross Cutting Concerns* : services which are needed through all other layers. For example, authentication and authorisation
 
 **Parts on UI layer**
-1. Controllers : receive the requests from browser, analyse it and send it the other server layers 
-2. Views : interpreting the objects received from the server and then forms the appropriate HTML views for sending to the browser 
+1. *Controllers* : receive the requests from browser, analyse it and send it the other server layers 
+2. *Views* : interpreting the objects received from the server and then forms the appropriate HTML views for sending to the browser 
 
 ---
 
@@ -52,17 +50,17 @@ So it could do nothing that required Operating System requests, such as
     - Session storage
     - Indexed db
 2. File System:
-    1. API
+    - API
 3. Multithreading:
-    1. web workers
+    - Web workers
 4. Inter Process Communication:
-    1. Server sent events
-    2. web sockets
-    3. web RTC -> it is peer to peer
+    - Server sent events
+    - Web sockets
+    - Web RTC -> it is peer to peer
 5. Host:
-    1. Service worker
+    - Service worker
 6. Device Access:
-    1. API's
+    - API's
 
 ---
 
@@ -71,35 +69,32 @@ So it could do nothing that required Operating System requests, such as
 Go where the processing power is  
 
 1. Data and Application were both on servers:
-    1. These were mainframes
-    2. Access was only through dedicated dumb terminals
+    - These were mainframes
+    - Access was only through dedicated dumb terminals
 2. Then the applications were pushed to the clients:
     - Distribution is a headache
     - mulitple architectures
     - no worries about client system
 3. Web application:
-    1. back to step 1, combining data and application
-    2. earlier we had dedicated dumb terminals
-    3. now we have browsers
-    4. all you need is a browser to access
+    - back to step 1, combining data and application
+    - earlier we had dedicated dumb terminals
+    - now we have browsers
+    - all you need is a browser to access
 4. Desktop applications made a big comeback:
-    1. Just now that the platform was mobile
-    2. So the applications are now deployed on mobile
-    3. Just like step 2
+    - Just now that the platform was mobile
+    - So the applications are now deployed on mobile
+    - Just like step 2
 
 ---
 
 ### The stack now
 
 Push the UI completely to the client side
-1. Controllers:
-    1. deciding what to based on user interaction
-2. Views:
-    1. components responsible for generating the HTML
-3. Models:
-    1. maintaining the application state
+1. Controllers: deciding what to based on user interaction
+2. Views: components responsible for generating the HTML
+3. Models: maintaining the application state
 
-** so, in all**
+**So, in all**
 1. We need the server for data storage  
 2. So the request and response are now data 
 3. This leads to much faster response times
@@ -107,8 +102,8 @@ Push the UI completely to the client side
 5. For examples, if we were to declare some stuff, then earlier we had to generate Session Id's to maintain the state
 6. Now we can maintain the state on the client 
 
-SPA : Single Page Application
-REA : Rich Internet Application 
+**SPA** : Single Page Application  
+**REA** : Rich Internet Application 
 
 The handle the UI we need frameworks, such as 
 1. React
@@ -121,9 +116,8 @@ The handle the UI we need frameworks, such as
 3. Rendered Page
 
 Changes to DOM can prove to be expensive as the changes have to be rendered again and again
-For examples, adding div will lead to adjustments in muliple places
+For examples, adding div will lead to adjustments in muliple places. However, with react
 
-With react
 1. HTML
 2. React DOM aka Virtual DOM
 3. DOM
@@ -170,8 +164,8 @@ To use variables inside xml in babel, use ```{variableName}```
 1. Rendering produced by loading of JSX cannot be accessed like a normal DOM object
 2. Hence we use something known as a **Component**
 3. Component = Presentation+Behaviour+State
-4. We encapsulate presentation and behaviour in a class by extending ```React.componenet```  
-5. render method is declared inside this class
+4. We encapsulate presentation and behaviour in a class by extending ```React.component```  
+5. Render method is declared inside this class
 
 #### State
 1. The state mentions all the data variables that tell react to render again whenever they change
@@ -188,8 +182,8 @@ To use variables inside xml in babel, use ```{variableName}```
 1. We always need a root element when we return an object while rendering
 2. This is the reason why every open tag should have a closed tag
 3. Also use:
-    1. htmlFor instead of for
-    2. className instead of class
+    - htmlFor instead of for
+    - className instead of class
 4. The reason for this is that javascript has these as keywords
 
 **Examples**

@@ -19,10 +19,7 @@ Where do you maintain state(data) ?
 ---
 
 ### State Manager
-
-1. 
-2. A state manager is made of the following components
-3. 
+A state manager is made of the following components
    
 #### Components of a State Manager   
    
