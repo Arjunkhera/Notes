@@ -52,12 +52,19 @@ setup in the blog.
 - [Jenkins](tools/Jenkins/main.md)
 - [Content Repositories](tools/ContentRepository/main.md)
 - [Adobe Experience Manager](tools/AEM/main.md)
+- [Maven](tools/maven/main.md)
+- [Kafka](tools/Kafka/main.md)
+
+### Blog
+
+1. [Setup](setup.md)
 
 ### Miscellaneous
 
 1. [Awesome take on vimwiki note taking](https://jamesbvaughan.com/markdown-pan)
 2. [Another resource](https://www.smoothterminal.com/articles/vimwiki)
 3. [And yet another](https://blog.mague.com/?p=602)
+4. [Globalisation](adobe/main.md)
 
 ### TO DO
 

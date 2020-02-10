@@ -1,5 +1,8 @@
 # VIM
 
+
+[Random Text](randomText)
+
 - [Some general advice on vim](general.md)
 - [Vundle](vundle.md)
 
