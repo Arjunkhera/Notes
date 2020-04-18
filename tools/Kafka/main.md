@@ -4,7 +4,6 @@
 - Distributed commit log
 - Distributed streaming platform
 
-
 #### Introduction :
 - Database commit logs provide a durable record of all transactions so that they can be replayed to consistently build the state of the system
 - Data withing Kafka is stored durably, in order and can be read deterministically
@@ -81,8 +80,39 @@
 - Topics can also be configured to be **log compacted**, wherein Kafka only retains the last message produced with a specific key
 
 
+#### Multiple Clusters and Mirror Maker :
+- Why use multiple clusters :
+    - Segregation of data types
+    - Isolation for security requirements
+    - Multiple datacentres(disaster recovery)
+- Replication by Kafka is supported on a per cluster level basis
+- Mirror Maker can be used for cluster level replication
+- Mirror Maker is simply a consumer and producer, linked together with a queue
+- Messages are consumed from one Kafka cluster and produced in another
 
 
+### Why Kafka ?
+
+1. ### Multiple Producers
+    - Can handled multiple producers whether those clients are using many topics or the same topic
+2. ### Multiple Consumers
+    - Mutiple consumers can chose to operate as a part of a stream, assuring that the entire group processes a given message only once
+3. ### Disk based retention
+    - Messages are committed to disk and are stored with configurable retention rules
+    - Consumers can be stopped, and the messages are retained in Kafka
+    - They can restart and pick up processing messages where they left off with no data loss
+4. ### Scalable 
+    - Expansions can be performed while the cluster is online with no impact on avalibility of the system as a whole
+    - A cluster of multiple brokers can also handle the failure of an individual broker and continue serving clients
+5. ### High Performance 
+
+
+### Use Cases
+1. Activity Tracking
+2. Messaging
+3. Metrics and Logging
+4. Commit Log
+5. Stream Processing
 
 
 

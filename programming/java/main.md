@@ -28,6 +28,11 @@
 
 1. [Logging](logging.md)
 
+- [The main method in Java](mainMethodInJava.md)
+- 
+
+
+
 ---
 
 ## To be sorted

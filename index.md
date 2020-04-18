@@ -1,36 +1,45 @@
-# Personal Knowledge Base
+# Hi
 
-### About 
+I am Arjun Khera. And you have stumbled upon my public personal space. 
 
-This repository contains notes and links to resources which I have found to be of useful. Most of the information present
-here is related technology in general and computer science in specific.  
+**10 Second Intro**
+Software Developer working in Adobe who likes reading, playing games, listening to music and learning new things.
+And of course sharing things, as you can guess by the plethora of links you are going to find below.
 
-Personally for me, this serves as a binder to review stuff. The purpose is to be able to reflect back on the challenges faced, 
-mistakes made and the solutions that were found. The contained notes are not supposed to act as a tutorial, but only
-to be used as references. The reason being that there are already a large number of resources available out there 
-having an impeccable quality.  
+If I caught your attention, you can get to know me better by heading to [About Me](about.md)
 
-Majority of the information you are going to find here will be roadblocks faced while developing or general issues 
-and how other people have solved them. Most of the time, as a developer, one comes across a plethora of new
-ways of doing stuff, or beautiful solutions to both challenging as well mundane problems. I intend to keep these 
-gems curated here for myself to reflect lest I shall face a similar situation in the future. I hope that others also 
-shall benefit from this as much, given that many of the troubles faced in development are similar 
-in nature.  
+**How do I find my way around this site ?**
+This is a mix of personal things I love to share and a vast of collection of notes. First section is about my stuff,
+that is blogs, and things I love to curate. Second section is a binder collection of my notes on various things, mostly programming. 
 
-There are also going to be some basic notes that I will make when I am learning something new, like a language
-or a tool. However, as explained above, the intent is to write only the basics and provides links to resources on the web.
-So in case, in future if I need to brush up anything, I can refer to these notes and links.
+**[Blog](/blog/main.md)** : Yes, another blog you might say. Well take your chances, for you are going to find here a rundown of my ramblings, which includes
+nearly everything under the sun from embarassing mistakes, heartbreaks, failures, hard lessions, take on philosophy, rants on 
+anything that interests me and of course etcetra, you are more than welcome to read my blog. Go on, give it a try, who knows you 
+might actually find something useful.
 
-Lastly, for the time being, there will also be some articles that I will post. The aim is to share experiences rather than
-raw information, which is basically available everywhere, one has to only google. I will try to provide some backstory 
-alongwith the problems and solutions. Here's hoping it might help someone.   
 
-The notes here are maintained using VimWiki, something I have found to be extremely powerful. You can find the details of the 
-setup in the blog.
+**[GoodReads](/goodReads/main.md)** : I read a lot of articles. And there is a plethora of really good content out there. GoodReads is a list of articles that 
+I would absolutely recommend reading.  
 
----
+**[Music](/music/main.md)** : 
 
-## Table of Contents
+**[Movies/Serials](movies/main.md)** : 
+
+
+## Personal Knowledge Base
+Yes. That's right. It took my 23 years exactly to realise that I was learning stuff the wrong way. I cannot speak 
+for others, but most of my life was spent rote learning, because, well that is exactly how the curriculum was here
+in India during my time. I do not blame anyone, and this is not a rant. 
+
+Long story short, check out the [Feynman technique](https://fs.blog/2012/04/feynman-technique/), it is a fascinating take on how to approach learning effectively.
+Since then, I have been on a mission to revisit a lot of topics in mathematics, science and computer science. While 
+on this journey, I have and will continue facing issues and solutions, amongst things that broaden my horizon and 
+enlighten me. 
+
+This personal knowledge base is an attempt to keep a track of the same and share it with others at the same time. 
+Most of the stuff you find here is going to be related to programming because thats what I do for a living. 
+
+### Table of Contents
 
 ### Programming
 - [HTML/CSS](programming/html_css/main.md)
@@ -54,6 +63,7 @@ setup in the blog.
 - [Adobe Experience Manager](tools/AEM/main.md)
 - [Maven](tools/maven/main.md)
 - [Kafka](tools/Kafka/main.md)
+- [Docker](tools/docker/main.md)
 
 ### Blog
 
@@ -65,6 +75,8 @@ setup in the blog.
 2. [Another resource](https://www.smoothterminal.com/articles/vimwiki)
 3. [And yet another](https://blog.mague.com/?p=602)
 4. [Globalisation](adobe/main.md)
+5. Ethos
+6. [Training](training.md)
 
 ### TO DO
 
@@ -79,3 +91,8 @@ setup in the blog.
 ### Temporary
 
 1. [Mini Project API's](apis.md)
+
+
+
+
+
