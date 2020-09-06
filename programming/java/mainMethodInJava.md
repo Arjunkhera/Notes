@@ -13,7 +13,7 @@ Its nice to know a few cases where a mistake in this could throw errors
 
 **Compile Time errors**
 1. Mistake in typing keywords
-2. Invalid method declration, for example missing return type
+2. Invalid method declaration, for example missing return type
 
 
 **Runtime errors**
@@ -28,6 +28,11 @@ public static void main(String args) {
 // missing static 
 public void main(String[] args) {
     System.out.println("Hello, World');
+}
+
+// using private instead of publid
+private static void main(String{} args) {
+    System.out.println("Hello, World");
 }
 ```
 

@@ -42,3 +42,5 @@ Long secondMethod = Long.parseLong("200");
 Long thirdMethod = Long.valueOf("200");
 
 ```
+
+4. Some classes are immutable. A nice example of this is String. Once you provide the value, you cannot modify it. You will have to create a new object if you want to make changes.

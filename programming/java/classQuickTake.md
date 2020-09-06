@@ -1,6 +1,6 @@
 ## Class representation in memory
 
-The following creates a new object. Here acc is a reference/pointer to a block of memory in Heap.
+- The following creates a new object. Here acc is a reference/pointer to a block of memory in Heap.
 
 ```java
 Account acc = new Account();
@@ -8,7 +8,7 @@ Account acc = new Account();
 
 ---
 
-Every class call in Java is of the form
+- Every class call in Java is of the form
 
 ```java
 context.message(arguments)
@@ -16,13 +16,9 @@ context.message(arguments)
 
 ---
 
-The variables of a class are also known as *instance variables* or *state of the object*  
-
-Declaring a variable as static makes it *state of the class*. So changes to it are  
-now visible across the objects of that class. It moves the storage from the heap to the metadata.   
-
-Returning a static variable by making the return type static of the method ensures that the call 
-can only be made by the class and not by the object.   
+- The variables of a class are also known as *instance variables* or *state of the object*  
+- Declaring a variable as static makes it *state of the class*. So changes to it are now visible across the objects of that class. It moves the storage from the heap to the metadata.   
+- Returning a static variable by making the return type static of the method ensures that the call can only be made by the class and not by the object.   
 
 ---
 
