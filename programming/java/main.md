@@ -3,12 +3,8 @@
 [Notes](notes.md)
 
 ----
-
-[Stream Processing](streamProcessing.md)
 [Exceptions](exceptions.md)
 [Files](files.md)
-[Design Patterns](designPatterns.md)
-[Constants](constants.md)
 [Static](static.md)
 
 ----
@@ -18,7 +14,6 @@
 1. [Basic](introduction.md)
 2. [JVM, JDK, JRE](acronyms.md)
 3. [Build Tools](buildTools.md)
-4. [Solid Design Principles](designPrinciples.md)
 5. [Programming Advice and Directory Structure](adviceStructure.md)
 
 ## Basics Semantics
@@ -50,6 +45,10 @@
 [Overriding](overriding.md)
 [SuperClass Reference](superClassReference.md)
 [Objects](objects.md)
+[Solid Design Principles](designPrinciples.md)
+[Design Patterns](designPatterns.md)
+[Stream Processing](streamProcessing.md)
+[Constants](constants.md)
 ## To be sorted
 
 1. What is a JAR file ?

@@ -4,6 +4,12 @@
 - We can make immutable objects, fancy way of saying values are final and cannot be changed once assigned. A good example is String class from java.lang
 - Use of toString for classes can lead to stack overflow if their is circular reference. Be carefu about using classes in toString or remove toString from one of the classes being referenced.
 
+## Constants
+
+- Java uses the final keyword
+- Uninitialised final variables cannot be used for printing. They need to be initialised first
+- Unlike C++, you can declare first, and initialise later. But you can only initialise once 
+
 ## Access Modifiers
 
 **Class**
@@ -165,6 +171,235 @@ An interface cannot contain
 - An abstract class can have a constructor and an interface cannot
 - In an abstract class, the keyword abstract is mandatory to declare a method as an abstract one while in an interface this keyword is optional
 
+## Anonymous Classes
+
+Context variables
+- It can capture variables of enclosing class(outer class)
+- It can capture local variables which are either final or effectively final
+
+Restrictions
+- They cannot have static initialisers or interface declarations
+- They cannot have static members except for constant variables(final static fields)
+- They cannot have constructors
+
+## Functional Interfaces
+
+- Have a single abstract method(SAM)
+- Can have static and default methods
+- Can be implemented using anonymous classes or lambdas
+
+**Closure**
+- We can capture variables from the context where a lambda was declared which can later be used in the callback. This technique is known as a closure.
+- The variable should be final or effectively final
+
+In functional programming, a functions that accepts or returns another functions is known as a higher order function
+List of common functional interfaces : https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html
+
+** Pain of effectively final variables in java**
+We can use only effectively final variables inside lamda's. There are three ways to get around this situation
+1. Declare variables static
+2. Use arrays instead
+3. Use Atomic variables
+Read more [here](https://dzone.com/articles/modifying-variable-inside-lambda) and [SO](https://stackoverflow.com/questions/30026824/modifying-local-variable-from-inside-lambda)
+
+
+## Streams
+
+- IntStream, LongStream and DoubleStream work with respective primitive types
+- Stream<T> is generic. Works with various reference types
+
+
+## Threading
+
+**Monitors** 
+- They are always present for an object
+- They ensure that changes are visible across all threads once the critical section is over. You do not require volatile to provide visibility
+- However, be wary while doing reads for shared variables. You might be tempted to make them unsynchronised. However, that makes them vulnerable to caching and hence reading stale values. Either make those shared variables volatile or make the read synchronised. Any of the above will ensure visbility of the shared variabled across the threads.
+
+## Java Enterprise Edition (JEE)
+
+Read these
+1. [High Level Overview](https://stackoverflow.com/a/7295697/5131614)
+
+## SOLID principles
+
+1. **Single responsibilitly**
+	Just do one thing only
+2. **Open Close Prinicple ( OCP )** 
+	Made once, but accepts anything falling in the criteria or is comparable. It should be extensible
+3. **Liskov Substitution Principle**
+	Any special function or object should be perfectly capable of performing all the functionality included in the general class. That is it should inherit all the functionality at the least, and then can add over it
+4. **Interface Segregation**
+	All functionalities should be separate for separate views. For example, a customer has a different view from a manager in a banking 
+	application
+5. **Dependency Injection**
+	Providing inputs and other stuff is our responsibility. The object does not concern itself with that. 
+
+## Singleton Design Pattern
+
+There is a single global instance of a class.
+
+Use cases :
+1. Connection to databases
+2. Universal logger for applications with the shared log file as the resource
+
+We can use lazy singletons, wherein we instantiate the class only when get method is called. However, this is only for single thread environments.
+
+## Observer Design Pattern
+
+There are four components to this design pattern 
+1. Observable subscribes observers, removes them, and notifies them about the changes
+2. Concrete Observable implements Observable operations and describes some states
+3. Observer subscribes to Observable and listens to its notification
+4. Concrete Observer implements Observer interface and reacts on updating (Observable notification)
+
+Usual use cases include
+- when changing one component influences another component
+- when subscriber publisher dependencies are present
+- when you need to have low coupling between components
+
+## Generic Programming
+
+Naming convention
+- T : type
+- S, U, V : subsequent types
+- E : element, used extensively in collections
+- K : key
+- V : value
+- N : number
+
+- The type argument in generics should always be a reference. Primitvie types are not allowed.
+- Use var for automatic type inference
+- You can achieve the same task as generics by using object type
+- However, this shifts the checks to run time since we would now need to do an explicit cast on objects being returned from the class
+- If there is a type mismatch, it would throw an error at runtime stalling the program if not handled.
+- Generics by definition make these checks at compile time since there is no type casting involved
+- You cannot use generic class type in a static method of that class
+
+## Collections
+
+- Collections cannot store primitive types
+
+
+## Sets
+
+Three major mutable implementations
+1. HashSet : uses hash table. No guarantee for ordering. O(1) access to read operations.
+2. TreeSet : provides ordering guarantee defined by a comparator. Extends sorted set interface. Works in log n, hence slower than hash set.
+3. LinkedListSet : provides ordering with respect to insertion. As fast as hash set for reads but takes more memory
+
+**Set Operations**
+- Union : addAll
+- Intersection : retainAll
+- Difference : removeAll
+
+## Stream Processing
+
+Allows for transferring data between program and sources
+
+**Broad Types**
+1. Input streams
+2. Output stream
+
+1. Byte streams
+2. Char streams
+
+
+**Character Streams**
+Reader is the super class extended by the following depending on the source of input stream 
+- FileReader
+- CharArrayReader
+- StringReader
+
+Some common methods of reader are
+```java
+// Reads a single character
+int read()
+
+// Reads characters into array
+int read(char[] cbuf) 
+
+// Reads characters into a portion of array
+int read(char[] cbuf, int off, int len) 
+
+// Reads characters into CharBuffer
+int read(CharBuffer target) 
+```
+
+We receive -1 when we reach end of stream of an exception occurs. For array based reads, we receive the numbers of characters read
+
+
+**Byte Stream**
+InputStream is the super class exteneded by the following depending on the source of the input stream
+- ByteArrayInputStream
+- FileInputStream
+- AudioInputStream
+
+Some common methods of inputstream are
+```java
+// Reads a single byte
+abstract int read() 
+
+// Reads some number of bytes and stores them in byte array
+int read(byte[] b) 
+
+// Reads up to len bytes and stores them in byte array
+int read(byte[] b, int off, int len) 
+
+// Read all bytes
+byte[] readAllBytes() 
+
+// Reads the requested number of bytes and stores them in byte array
+int readNBytes(byte[] b, int off, int len) 
+
+// Reads the requested number of bytes
+byte[] readNBytes(int len) 
+```
+
+readAllBytes stops at either end of file or end of stream, whereas readNBytes ends only at end of stream
+
+
+**Buffered Streams**
+
+```java
+
+// For byte input streams:
+BufferedInputStream(InputStream in)
+BufferedInputStream(InputStream in, int size)
+
+// For character input stream:
+BufferedReader(Reader in)
+BufferedReader(Reader in, int size)
+```
+
+## Handling Resource allocation
+
+Taking care to close the streams in order to prevent leaks is important. You can use try with resource to automatically close the resources. 
+Any resource that implements AutoCloseable can be used in try with resource. Check the [Official Documentation](https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html) for 
+more information. 
+
+## Escaping Characters
+
+- For character escaping, we use \. The combination of backslash with a special character is known as **control sequence**
+- List of control sequences in Java
+    - \t : tab
+    - \b : backspace
+    - \n : newline
+    - \r : carriage return
+    - \f : form feed
+    - \' : single quote
+    - \" : double quote
+    - \\ : backslash
+
+You also use escape sequence to print Unicode characters. For example, 
+```java
+System.out.println("Following is a unicode character : \u00A9");
+```
+- Read more on this [here](https://codegym.cc/groups/posts/escaping-characters-java)
+
+## Files
+
+- For working in projects, you working directory is initialised as the root of the project
 
 ## Q/A
 
